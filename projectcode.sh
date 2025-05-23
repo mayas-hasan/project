@@ -6,7 +6,7 @@ users_file="users/users.txt"
 log_file="logs/actions.log"
 
 log_action() {
-  echo "$(dats '+%Y-%m-%d %H:%M:%S') - $1" >> "$log_file"
+  echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> "$log_file"
 }
 
 create_account() {
